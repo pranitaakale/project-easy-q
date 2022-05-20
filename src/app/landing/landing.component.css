@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.welcome {
+    background-color: var(--landing-bg);
+    margin-top: 3rem;
+}
+
+#cir-01 {
+    width: 150px;
+    height: 200px;
+    background-color: var(--circle-bg-01);
+    border-bottom-right-radius: 150px;
+    border-top-right-radius: 150px;
+    border: none;
+    border-top: 0;
+    float: left;
+    left: -45px;
+    top: 200px;
+    position: absolute;
+    z-index: 0;
+    /* Change this to left to float it to left */
+}
+
+#cir-02 {
+    width: 180px;
+    height: 90px;
+    background-color: var(--main-color-03);
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border: none;
+    border-top: 0;
+    float: left;
+    left: 350px;
+    top: 470px;
+    position: absolute;
+    z-index: 0;
+    /* Change this to left to float it to left */
+}
+
+#cir-03 {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    left: 900px;
+    top: 110px;
+    border-radius: 50%;
+    background-color: var(--circle-bg-01);
+    z-index: 0;
+}
+
+.content {
+    display: flex;
+    width: 80%;
+    margin: 7rem auto;
+}
+
+.carousel-item {
+    background-color: var(--landing-bg);
+    color: var(--lg-font);
+    height: 90vh;
+}
+
+.text-content {
+    width: 50%;
+    padding: 1rem;
+}
+
+.text-content h1 {
+    font-size: 1rem;
+}
+
+.text-content p {
+    font-size: 1.75rem;
+}
+
+.text-content button {
+    background: var(--gradient);
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    margin-top: 3rem;
+}
+
+.text-content a {
+    text-decoration: none;
+    color: var(--lg-font);
+    font-size: 1.2rem;
+}
+
+.img-content {
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-item img {
+    position: relative;
+    width: 70%;
+}
+
+.slider-content h1 {
+    font-family: var(--landing-font-01);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 52px;
+    display: flex;
+    /* background: linear-gradient(268.65deg, #5670FF 80.86%, #00B2FF 93.84%); */
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 3.5%;
+}

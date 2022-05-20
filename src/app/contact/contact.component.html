@@ -1,0 +1,63 @@
+<!-- <p>contact-us works!</p> -->
+
+<!-- <app-header></app-header> -->
+
+<body>
+
+    <div class="container ">
+
+        <div class="contact-us left-container">
+            <div>
+                <h1 class="p-3 mb-1 text-center"><i class="fa-solid fa-file-pen"></i> Contact Us</h1>
+            </div>
+        </div>
+
+        <form id="contactForm" class="bg-cls">
+
+            <!-- Name input -->
+            <div class="mb-3">
+                <label class="form-label" for="name"><i class="fa-solid fa-user"></i> Name</label>
+                <input class="form-control" id="name" name="name" ngModel required #name="" type="text" placeholder="Name" />
+            </div>
+
+            <!-- Email address input -->
+            <div class="mb-3">
+                <label class="form-label" for="emailAddress"> <i class="fa-solid fa-envelope-circle-check"></i> Email Address</label>
+                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+            </div>
+
+            <!-- Subject -->
+            <div class="mb-3">
+                <label class="form-label" for="subject"> <i class="fa-solid fa-circle-question"></i> Subject</label>
+                <select formControlName="contactFormSubjects" class="form-control form-select mb-4" aria-label="Default select example" id="selectsub">
+            <option value="" disabled>Choose option</option>
+            <option value="1" selected>Feedback</option>
+            <option value="2">Report a bug</option>
+            <option value="3">Feature request</option>
+            <option value="4">Feature request</option>
+        </select>
+            </div>
+            <!-- Message input -->
+            <div class="mb-3">
+                <label class="form-label" for="message"> <i class="fa-solid fa-comment-dots"></i> Message</label>
+                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+            </div>
+
+            <!-- send Feedback  -->
+
+            <div class="form-check mb-3">
+                <input class="form-check-input check" type="checkbox" value="" id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                Send me a copy of this message
+            </label>
+            </div>
+
+            <!-- Form submit button -->
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg" type="submit"><i class="fa-solid fa-paper-plane"></i> Send </button>
+            </div>
+
+        </form>
+    </div>
+    <!-- <app-footer></app-footer> -->
+</body>

@@ -1,0 +1,78 @@
+<nav class="sticky" id="nav">
+    <div class="logo">
+        <img src="../../assets/EQ.svg" alt="">
+    </div>
+    <div class="nav-menu">
+        <div>
+            <div class="menu_icon" [class.menu_icon_Class]="menu_icon_variable" (click)="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu" [class.menuClass]="menuVariable">
+                <ul [class.menuClass]="menuVariable">
+                    <li routerLinkActive="active">
+                        <a class="Homepage" [routerLink]="['service']">
+                           Services
+                        </a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a class="Aboutpage" [routerLink]="['about']">
+                           About
+                        </a>
+
+                    </li>
+                    <li routerLinkActive="active">
+                        <a class="Contactpage" [routerLink]="['contact']">
+                           Contact
+                        </a>
+                    </li>
+
+                    <li routerLinkActive="active">
+                        <a class="Blogpage" [routerLink]="['blog']">
+                           Blogs
+                        </a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a *ngIf="!activeSession()" class="loginpage" [routerLink]="['login']">SignIn</a>
+                        <a *ngIf="activeSession()" class="loginpage" [routerLink]="['login']">Profile</a>
+                        <!-- <a type="button " class="btn dropdown-toggle " data-bs-toggle="dropdown " aria-expanded="false ">
+                            Profile
+                        </a> -->
+                        <!-- <ul class="dropdown-menu ">
+                            <p class="dropdown-item " href="# ">
+                                <img src="../../assets/dummy-icon.svg " alt=" " width="10% "> Account
+                            </p>
+                            <p class="dropdown-item " href="# ">
+                                <img src="../../assets/dummy-icon.svg " alt=" " width="10% "> Settings</p>
+                            <hr class="dropdown-divider ">
+
+                            <p class="dropdown-item " href="# ">
+                                <img src="../../assets/dummy-icon.svg " alt=" " width="10% "> Logout</p>
+                        </ul> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <ul>
+            <li><a href=" " routerLinkActive="active ">Services</a></li>
+            <li><a href=" " routerLinkActive="active ">About</a></li>
+            <li><a [routerLink]="[ 'contact'] " routerLinkActive="active ">Contact</a></li>
+            <li><a href=" " routerLinkActive="active ">Blog</a></li>
+            <li>
+                <a type="button " class="btn dropdown-toggle " data-bs-toggle="dropdown " aria-expanded="false " routerLinkActive="active ">Profile</a>
+                <ul class="dropdown-menu ">
+                    <p class="dropdown-item " href="# ">
+                        <img src="../../assets/dummy-icon.svg " alt=" " width="10% "> Account
+                    </p>
+                    <p class="dropdown-item " href="# ">
+                        <img src="../../assets/dummy-icon.svg " alt=" " width="10% "> Settings</p>
+                    <hr class="dropdown-divider ">
+
+                    <p class="dropdown-item " href="# ">
+                        <img src="../../assets/dummy-icon.svg " alt=" " width="10% "> Logout</p>
+                </ul>
+            </li>
+        </ul> -->
+    </div>
+</nav>

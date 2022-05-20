@@ -1,0 +1,208 @@
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 5rem 0;
+        background-color: var(--lg-bg);
+        overflow-x: hidden;
+    }
+    
+    .ab-title {
+        display: flex;
+    }
+    
+    .img {
+        margin: 4.5rem;
+    }
+    
+    .water-mark {
+        position: absolute;
+        font-size: 10rem;
+        font-family: var(--landing-font-01);
+        color: #D1D6F4;
+        text-align: right;
+        width: 60%;
+    }
+    
+    .text h3 {
+        position: relative;
+        top: 8rem;
+        left: 7rem;
+        font-size: 4.5rem;
+        font-family: var(--landing-font-01);
+        font-weight: bolder;
+        color: var(--main-color-02);
+    }
+    
+    .text p {
+        position: relative;
+        top: 7.5rem;
+        left: 7rem;
+        width: 50%;
+        font-size: 1.2rem;
+        font-weight: 700;
+        font-family: var(--normal-font);
+        color: var(--main-color-02);
+    }
+    
+    .features {
+        margin: 1rem 3rem;
+        display: flex;
+    }
+    
+    .features label {
+        left: -18rem;
+        font-size: 7rem;
+    }
+    
+    .features h3 {
+        position: relative;
+        top: 5rem;
+        left: 1rem;
+        font-size: 4.5rem;
+        font-family: var(--landing-font-01);
+        font-weight: bolder;
+        color: var(--main-color-02);
+    }
+    
+    .ft-title {
+        width: 25%;
+    }
+    
+    .ft-title img {
+        width: 70%;
+        transform: scaleX(-1);
+        margin-top: 3rem;
+        margin-left: 25rem;
+    }
+    
+    .ft-title img:hover {
+        transform: scale(-1.1, 1.1);
+    }
+    
+    .cards-list {
+        padding: 1rem;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0 0 20rem;
+    }
+    
+    .card-ft {
+        width: 90%;
+        margin: 0 auto;
+        padding: .1rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        font-family: var(--normal-font);
+        color: var(--main-color-02);
+    }
+    
+    .card-ft p {
+        padding: 1rem;
+        margin: 1rem 0;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    
+    .card-ft p:hover {
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        padding: 1.05rem;
+    }
+    
+    .team {
+        position: relative;
+        animation-name: slide;
+        animation-duration: 3s;
+        color: var(--main-color-02);
+        padding: 2rem;
+    }
+    
+    .tm-title h3 {
+        font-size: 3rem;
+        font-family: var(--landing-font-01);
+        font-weight: bolder;
+        color: var(--main-color-02);
+    }
+    
+    .members {
+        position: relative;
+        padding: 0 15px;
+    }
+    
+    .column {
+        width: 20%;
+        margin-bottom: 16px;
+        padding: 0 10px;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+    
+    .card img {
+        max-height: 7rem;
+    }
+    
+    .container {
+        background: var(--lg-font);
+    }
+    
+    .container {
+        padding: .5rem;
+    }
+    
+    .container h5 {
+        font-size: 1.5rem;
+        font-family: var(--normal-font);
+        font-weight: 900;
+    }
+    
+    .container p {
+        color: rgb(93, 93, 149);
+    }
+    
+    .container button {
+        border: none;
+        background-color: var(--main-color-03);
+        color: var(--main-color-02);
+        font-family: var(--normal-font);
+        font-weight: 700;
+        padding: .5rem;
+        border-radius: .2rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    
+    @media only screen and (max-width: 999px) {
+        .ab-title {
+            flex-direction: column;
+        }
+        .img {
+            margin: auto;
+        }
+        .img img {
+            width: 30%;
+        }
+        .water-mark {
+            font-size: 5rem;
+            display: none;
+        }
+        .text h3 {
+            font-size: 2rem;
+            top: 0rem;
+            margin: 0 auto;
+        }
+        .features {
+            flex-direction: column;
+        }
+        .features h3 {
+            font-size: 2rem;
+        }
+        .members {
+            display: flex;
+            flex-direction: column;
+        }
+        .column {
+            width: 90%;
+            margin: auto;
+        }
+    }

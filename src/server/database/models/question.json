@@ -1,0 +1,252 @@
+[
+  {
+    "question": "Point out the correct statement.",
+    "option_a": "Raw data is original source of data",
+    "option_b": "Preprocessed data is original source of data",
+    "option_c": "Raw data is the data obtained after processing steps",
+    "option_d": "None of the mentioned",
+    "correct_option": "option_a",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Which of the following is performed by Data Scientist?",
+    "option_a": "Define the question",
+    "option_b": "Create reproducible code",
+    "option_c": "Challenge results",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_d",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": " Which of the following is the most important language for Data Science?",
+    "option_a": "Java",
+    "option_b": "Ruby",
+    "option_c": "R",
+    "option_d": "None of the mentioned",
+    "correct_option": "option_c",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": " Point out the wrong statement.",
+    "option_a": "Merging concerns combining datasets on the same observations to produce a result with more variables",
+    "option_b": "Data visualization is the organization of information according to preset specifications",
+    "option_c": "Subsetting can be used to select and exclude variables and observations",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_b",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Which of the following is one of the key data science skills?",
+    "option_a": "Statistics",
+    "option_b": "Machine Learning",
+    "option_c": "Data Visualization",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_d",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Point out the correct statement.",
+    "option_a": "Raw data is original source of data",
+    "option_b": "Preprocessed data is original source of data",
+    "option_c": "Raw data is the data obtained after processing steps",
+    "option_d": "None of the mentioned",
+    "correct_option": "option_a",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Which of the following is performed by Data Scientist?",
+    "option_a": "Define the question",
+    "option_b": "Create reproducible code",
+    "option_c": "Challenge results",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_d",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": " Which of the following is the most important language for Data Science?",
+    "option_a": "Java",
+    "option_b": "Ruby",
+    "option_c": "R",
+    "option_d": "None of the mentioned",
+    "correct_option": "option_c",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": " Point out the wrong statement.",
+    "option_a": "Merging concerns combining datasets on the same observations to produce a result with more variables",
+    "option_b": "Data visualization is the organization of information according to preset specifications",
+    "option_c": "Subsetting can be used to select and exclude variables and observations",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_b",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Which of the following is one of the key data science skills?",
+    "option_a": "Statistics",
+    "option_b": "Machine Learning",
+    "option_c": "Data Visualization",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_d",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Point out the correct statement.",
+    "option_a": "Raw data is original source of data",
+    "option_b": "Preprocessed data is original source of data",
+    "option_c": "Raw data is the data obtained after processing steps",
+    "option_d": "None of the mentioned",
+    "correct_option": "option_a",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Which of the following is performed by Data Scientist?",
+    "option_a": "Define the question",
+    "option_b": "Create reproducible code",
+    "option_c": "Challenge results",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_d",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": " Which of the following is the most important language for Data Science?",
+    "option_a": "Java",
+    "option_b": "Ruby",
+    "option_c": "R",
+    "option_d": "None of the mentioned",
+    "correct_option": "option_c",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": " Point out the wrong statement.",
+    "option_a": "Merging concerns combining datasets on the same observations to produce a result with more variables",
+    "option_b": "Data visualization is the organization of information according to preset specifications",
+    "option_c": "Subsetting can be used to select and exclude variables and observations",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_b",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Which of the following is one of the key data science skills?",
+    "option_a": "Statistics",
+    "option_b": "Machine Learning",
+    "option_c": "Data Visualization",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_d",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Point out the correct statement.",
+    "option_a": "Raw data is original source of data",
+    "option_b": "Preprocessed data is original source of data",
+    "option_c": "Raw data is the data obtained after processing steps",
+    "option_d": "None of the mentioned",
+    "correct_option": "option_a",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Which of the following is performed by Data Scientist?",
+    "option_a": "Define the question",
+    "option_b": "Create reproducible code",
+    "option_c": "Challenge results",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_d",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": " Which of the following is the most important language for Data Science?",
+    "option_a": "Java",
+    "option_b": "Ruby",
+    "option_c": "R",
+    "option_d": "None of the mentioned",
+    "correct_option": "option_c",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": " Point out the wrong statement.",
+    "option_a": "Merging concerns combining datasets on the same observations to produce a result with more variables",
+    "option_b": "Data visualization is the organization of information according to preset specifications",
+    "option_c": "Subsetting can be used to select and exclude variables and observations",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_b",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Which of the following is one of the key data science skills?",
+    "option_a": "Statistics",
+    "option_b": "Machine Learning",
+    "option_c": "Data Visualization",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_d",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Point out the correct statement.",
+    "option_a": "Raw data is original source of data",
+    "option_b": "Preprocessed data is original source of data",
+    "option_c": "Raw data is the data obtained after processing steps",
+    "option_d": "None of the mentioned",
+    "correct_option": "option_a",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Which of the following is performed by Data Scientist?",
+    "option_a": "Define the question",
+    "option_b": "Create reproducible code",
+    "option_c": "Challenge results",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_d",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": " Which of the following is the most important language for Data Science?",
+    "option_a": "Java",
+    "option_b": "Ruby",
+    "option_c": "R",
+    "option_d": "None of the mentioned",
+    "correct_option": "option_c",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": " Point out the wrong statement.",
+    "option_a": "Merging concerns combining datasets on the same observations to produce a result with more variables",
+    "option_b": "Data visualization is the organization of information according to preset specifications",
+    "option_c": "Subsetting can be used to select and exclude variables and observations",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_b",
+    "question_set_id": null,
+    "isIncluded": true
+  },
+  {
+    "question": "Which of the following is one of the key data science skills?",
+    "option_a": "Statistics",
+    "option_b": "Machine Learning",
+    "option_c": "Data Visualization",
+    "option_d": "All of the mentioned",
+    "correct_option": "option_d",
+    "question_set_id": null,
+    "isIncluded": true
+  }
+]

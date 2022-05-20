@@ -1,0 +1,47 @@
+/* we use ng-directives for styling our forms */
+
+.ng-valid[required],
+.ng-valid.required {
+    border-left: 5px solid #42A948;
+    /* green */
+}
+
+.ng-invalid:not(form) {
+    border-left: 5px solid #f3231f;
+    /* red */
+}
+
+.row {
+    margin: 5rem auto;
+}
+
+.bg-cls {
+    padding: 1.5rem;
+    background-color: var(--color);
+}
+
+form a {
+    text-decoration: none;
+    margin-left: -25px;
+}
+
+.old-acc {
+    margin-top: 2rem;
+}
+
+.old-acc a {
+    margin-left: .5rem;
+}
+
+.align-right {
+    margin-left: 7rem;
+}
+
+.sign-btn {
+    width: 12rem;
+}
+
+
+/* .btn-primary {
+    background-color: var(--light-shade);
+} */

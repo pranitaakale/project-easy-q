@@ -1,0 +1,57 @@
+/* div div h1 {
+    color: #ffff;
+    background-color: #33B5E5;
+} */
+
+body {
+    background-color: var(--lg-bg);
+    padding: 5rem 0;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+.left-container {
+    width: 45%;
+    font-size: 2rem;
+    color: var(--main-color-02);
+}
+
+.bg-cls {
+    padding: 1.5rem;
+    background-color: var( --lg-font);
+}
+
+#contactForm {
+    width: 75%;
+}
+
+.mb-3 {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.check input {
+    width: 10%;
+}
+
+.btn-primary {
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--main-color-02);
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-container {
+        width: 90%;
+    }
+    #contactForm {
+        width: 95%;
+        margin: 0 auto;
+    }
+}

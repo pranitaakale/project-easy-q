@@ -1,0 +1,86 @@
+<body>
+    <div *ngIf="ALERT_BOX.display" role="alert ">
+        <div id="overlay">
+            <div id="mod01" class="alert-box alert alert-dismissible fade show ">
+                <div class="icon-div">
+                    <span onclick="document.getElementById('mod01').style.display='none';
+                document.getElementById('overlay').style.height=0;" class="close-button topright">&times;</span>
+                </div>
+                <div class="alert-msg">
+                    <h4>{{ ALERT_BOX.title }}</h4>
+                    <p>{{ ALERT_BOX.text }}</p>
+                    <button onclick="document.getElementById('mod01').style.display='none';
+                document.getElementById('overlay').style.height=0;" class="close-button topright">OK
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <a [class.active]="TAB_ID === 'tab01'" (click)="openTab('tab01')">
+            <i class="fa-solid fa-upload"></i>
+            <b>Upload File</b>
+        </a>
+        <a [class.active]="TAB_ID === 'tab02'" (click)="openTab('tab02')">
+            <i class="fa-solid fa-paste"></i>
+            <b>Paste Content</b>
+        </a>
+        <a [class.active]="TAB_ID === 'tab03'" (click)="openTab('tab03')">
+            <i class="fa-solid fa-arrow-pointer"></i>
+            <b>Choose File</b>
+        </a>
+        <span></span>
+    </nav>
+    <div class="tab-content">
+
+        <section id='tab01' *ngIf="TAB_ID === 'tab01' ">
+            <div *ngIf="!FILE_RECORD.isSubmitted" class="upload-div">
+                <img src="../../assets/foler.svg" alt="">
+                <br>
+                <div *ngIf="SHOW_LOADER">
+                    <app-loader></app-loader>
+                </div>
+                <p>{{ FILE_RECORD.fileInputText }}</p>
+                <form action="">
+                    <div *ngIf="!FILE_RECORD.isSelected">
+                        <div class="file">
+                            <label for="file-input">Browse</label>
+                            <input type="file" id="file-input" (change)="onFileSelected($event)">
+                        </div>
+                    </div>
+                    <div *ngIf="FILE_RECORD.isSelected" class="slide-up">
+                        <div *ngIf="!FILE_RECORD.uploadProgress">
+                            <input type="reset " value="Remove " class="btn btn-primary m-4 " (click)="FILE_RECORD.isSelected=undefined ">
+                            <input type="submit " class="btn btn-primary " value="Upload " (click)=" onUpload()">
+                        </div>
+                        <div *ngIf="FILE_RECORD.uploadProgress" class="progress-bar">
+                            <div class="upload-progress"></div>
+                            <p>Uploading...</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div *ngIf="FILE_RECORD.isSubmitted" class="to-quest">
+                <p>Do you want to Generate Questions now ?</p>
+                <input type="submit " class="btn btn-primary " value="Yes ! " (click)="generateQ() ">
+                <input type="submit " class="btn btn-primary " value="No, Later. " (click)="enqueueQ() ">
+            </div>
+        </section>
+        <section id='tab02' *ngIf="TAB_ID==='tab02' ">
+            <form>
+                <div class="paste-container " id="paste ">
+                    <label for=" " class="form-label fw-bold "><i class="fa-solid fa-paste "></i> Paste your Content here</label>
+
+                    <div class="paste-content">
+                        <textarea class="form-control " id="exampleFormControlTextarea1 " rows="13 "></textarea>
+                        <input type="submit " class="btn btn-primary " value="Submit " (click)="onPaste() ">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section id='tab03' *ngIf="TAB_ID==='tab03' ">
+            Choose
+        </section>
+    </div>
+</body>

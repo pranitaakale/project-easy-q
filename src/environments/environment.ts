@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  UPLOAD_URL : "http://localhost:3000/api/upload",
+  SIGN_UP: "http://localhost:3000/api/auth/signup",
+  SIGN_IN: "http://localhost:3000/api/auth/signin",
+  GET_QUESTIONS : "http://localhost:3000/api/upload/questions",
+  GENERATE_QUESTIONS : "http://localhost:3000/api/upload/gen-questions"
 };
 
 /*

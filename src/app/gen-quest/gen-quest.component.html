@@ -1,0 +1,81 @@
+<body>
+    <div *ngIf="SHOW_LOADER">
+        <app-loader></app-loader>
+    </div>
+    <div class="main-container">
+        <div class="info">
+            <div class="title">
+                <h4>Question Bank</h4>
+            </div>
+            <div class="break"></div>
+            <div class="details">
+                <ul>
+                    <li>
+                        File
+                        <p> : <strong> {{ FILE_NAME }}</strong></p>
+                    </li>
+                    <li>
+                        <label>Questions Generated :</label>
+                        <p><strong> {{ TOTAL_QUEST }}</strong></p>
+                    </li>
+                    <li>
+                        <label> Questions Included :</label>
+                        <p><strong> {{ INCLUDE_COUNT }}</strong></p>
+                    </li>
+                    <li>
+                        <label> Questions Discarded :</label>
+                        <p><strong> {{ DISCARD_COUNT }}</strong></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="break-02"></div>
+        <div class="quest">
+            <div *ngIf="QUEST_FLAG" class="quest-card">
+                <div class="quest-text">
+                    <h5>Question {{ QUEST_NUM }}</h5>
+                    <p><strong>{{ QUEST_OBJ.quest_text }}</strong></p>
+                </div>
+                <div class="option-text">
+                    <ul>
+                        <li>{{ QUEST_OBJ.opt_a }}</li>
+                        <li>{{ QUEST_OBJ.opt_b }}</li>
+                        <li>{{ QUEST_OBJ.opt_c }}</li>
+                        <li>{{ QUEST_OBJ.opt_d }}</li>
+                    </ul>
+                </div>
+                <div class="ans-text">
+                    <p><strong>Answer :</strong>{{ QUEST_OBJ.corr_opt }}</p>
+                </div>
+                <div class="btn-container">
+                    <button id="disc" (click)="updateDiscard()">Discard</button>
+                    <button id="incl" (click)="updateInclude()">Include</button>
+                </div>
+            </div>
+            <div *ngIf="FINAL_QS_FLAG" class="quest-card">
+                <div *ngFor="let quest of FINAL_QUEST_SET; let i = index">
+                    <div class="quest-text">
+                        <h5>Question {{ i+1 }}</h5>
+                        <p><strong>{{ quest.question }}</strong></p>
+                    </div>
+                    <div class="option-text">
+                        <ul>
+                            <li>{{ quest.option_a }}</li>
+                            <li>{{ quest.option_b }}</li>
+                            <li>{{ quest.option_c }}</li>
+                            <li>{{ quest.option_d }}</li>
+                        </ul>
+                    </div>
+                    <div class="ans-text">
+                        <p><strong>Answer :</strong>{{ quest[quest.correct_option] }}</p>
+                    </div>
+                    <div class="break"></div>
+
+                </div>
+                <div class="btn-container">
+                    <button id="disc">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

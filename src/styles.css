@@ -1,1 +1,141 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+:root {
+    --landing-bg: #0A1551;
+    --landing-font-01: 'Archivo Black', sans-serif;
+    --normal-font: 'Work Sans', sans-serif;
+    --lg-font: #FCFDFF;
+    --semi-med-font: #ebeefc;
+    --med-font: #acb0c8;
+    --circle-bg-01: #39416B;
+    /* --circle-bg-02: #00B2FF; */
+    /* --circle-bg-03: #39416B; */
+    /* --main-color-01: #5670FF; */
+    --tr-bg: #fefefef2;
+    --main-color-02: #304099;
+    --main-color-03: #00B2FF;
+    --gradient: linear-gradient(279.26deg, #3F51B5 7.31%, #00B2FF 113.59%);
+    --lg-bg: #e1e4f8;
+    --border: .02rem solid magenta;
+}
+
+::-webkit-scrollbar {
+    width: .3rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--lg-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color-02);
+    border-radius: 1rem;
+}
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: block;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 9999;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    transition: 0.5s;
+    /* Add a pointer on hover */
+}
+
+.alert-box {
+    width: 20%;
+    height: 50%;
+    margin: 7rem auto;
+    background-color: var(--lg-font);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    box-shadow: 0 12px 20px rgba(251, 248, 248, 0.1);
+    /* background: linear-gradient(111.4deg, #c3caef 18.6%, #d6f4fe 104.44%, #c7efff 104.44%); */
+}
+
+.alert-msg {
+    text-align: center;
+    justify-content: center;
+    margin: 3.5rem auto;
+    padding: 1rem;
+    /* background: linear-gradient(111.4deg, #c3caef 18.6%, #d6f4fe 104.44%, #c7efff 104.44%); */
+}
+
+.alert-msg button {
+    width: 45%;
+    height: 12%;
+    border-radius: .25rem;
+    border: none;
+    background: linear-gradient(96.9deg, #3F51B5 32.26%, #00B2FF 143.75%);
+    ;
+    margin-top: 16rem;
+    margin-right: 4.5rem;
+}
+
+.icon-div {
+    background: linear-gradient(96.9deg, #3F51B5 32.26%, #00B2FF 143.75%);
+    margin: 0;
+    padding: 0;
+    height: 25%;
+}
+
+.circle {
+    width: 30%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: var(--lg-font);
+    margin: 3rem auto;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.circle img {
+    width: 60%;
+    margin: 1rem;
+}
+
+.close-button {
+    vertical-align: middle;
+    overflow: hidden;
+    padding: .5rem;
+    text-decoration: none;
+    color: var(--lg-font);
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+@media only screen and (max-width: 1000px) {
+    .alert-box {
+        width: 55%;
+        height: 35%;
+    }
+    .alert-msg {
+        padding: 0;
+    }
+    .alert-msg button {
+        margin-right: 3.5rem;
+    }
+}

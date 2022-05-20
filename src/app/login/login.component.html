@@ -1,0 +1,52 @@
+<div class="row ">
+    <!-- class= bg-light py-5 m-4 -->
+    <div class="col-md-6 offset-md-3 mt-4 bg-cls">
+        <h3><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</h3>
+
+        <form #f="ngForm" (ngSubmit)="onSubmit(f) ">
+
+            <div class="mb-3 mt-4">
+                <label for="loginUsername" class="form-label"><i class="fa-solid fa-user"></i> Username</label>
+                <input type="text" name="username" ngModel required #username="ngModel" class="form-control" id="loginUsername" placeholder="Enter username">
+            </div>
+
+            <div class="mb-3">
+                <label for="loginPassword" class="form-label"><i class="fa-solid fa-key"></i> Password</label>
+                <input type="password" name="password" ngModel required #password="ngModel" class="form-control" id="loginPassword" placeholder="Enter Password">
+            </div>
+
+            <div class="flex-items">
+                <!-- remember me  -->
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="rememberme">
+                    <label class="form-check-label sign-btn" for="rememberme">
+                    Remember Me 
+                </label>
+                </div>
+
+                <div class="mb-3 form-check align-right sign-btn">
+                    <a [routerLink]="['/reset-password']" id="forget">Forgot Password??</a>
+                </div>
+            </div>
+
+            <div class="flex-items">
+                <button type="submit" class="btn btn-primary sign-btn mx-4" [disabled]="f.invalid">LogIn
+                <i class="fa-solid fa-right-to-bracket"></i></button> -OR-
+                <button type="submit" class="btn btn-primary mx-4 sign-btn">LogIn with Google
+                    </button>
+            </div>
+
+
+            <!-- We can use following directives  -->
+            <!-- <p>username value: {{ username.value }}</p>
+                <p>password value: {{password.value }}</p>
+                <p>username valid: {{ username.valid }}</p>
+                <p>password valid: {{password.valid}}</p>
+                <p>username dirty: {{ username.dirty }}</p>
+                <p>username touched: {{ username.touched }}</p> -->
+        </form>
+        <div class="mb-3 form-check new-acc">
+            Don't have an account? <a [routerLink]="['/signup']" id="forget">Create New Account</a>
+        </div>
+    </div>
+</div>

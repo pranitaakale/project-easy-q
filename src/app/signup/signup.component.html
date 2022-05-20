@@ -1,0 +1,61 @@
+<!-- <p>signup works!</p> -->
+
+<body>
+
+
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt-4 bg-cls">
+            <h3> <i class="fa-solid fa-user-plus"></i> Register New User</h3>
+
+            <form #signup="ngForm" (ngSubmit)="onSubmit(signup)">
+
+                <!-- <div class="mb-3 mt-4">
+                <label for="registerUsername" class="form-label"> <i class="fa-solid fa-user"></i> Username</label>
+                <input type="text" name="username" ngModel required #username="ngModel" class="form-control"
+                    id="registerUsername" placeholder="Enter username">
+            </div> -->
+
+                <!-- <div class="mb-3">
+                <label for="registerDOB" class="form-label"><i class="fa-solid fa-cake-candles"></i> Date Of Birth</label>
+                <input type="date" name="userdob" ngModel required #username="ngModel" class="form-control"
+                    id="registerDOB" placeholder="">
+            </div> -->
+
+                <!-- <div class="mb-3">
+                <label for="registerEmail" class="form-label"required> <i class="fa-solid fa-mars"></i> Gender</label>
+                <div class="mb-3" >
+                    <input type="radio" value="male" name="gender" required id="gender"> Male
+                    <input type="radio" value="female" name="gender" required id="gender"> Female
+                    <input type="radio" value="other" name="gender" required id="gender"> Other
+                </div>
+            </div> -->
+
+                <div class="mb-3">
+                    <label for="registerEmail" class="form-label"> <i class="fa-solid fa-envelope"></i> Email</label>
+                    <input type="email" name="email" ngModel required #email="ngModel" class="form-control" id="registerEmail" placeholder="Enter email" ngModel>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="registerPassword" class="form-label"><i class="fa-solid fa-key"></i> Create Password</label>
+                    <input type="password" name="password" ngModel required #password="ngModel" class="form-control" id="registerPassword" placeholder="Password" ngModel>
+                </div>
+
+                <div class="mb-3">
+                    <label for="registerPassword1" class="form-label"><i class="fa-solid fa-key"></i> Confirm Password</label>
+                    <input type="password" name="cpassword" ngModel required #cpassword="ngModel" class="form-control" id="registerPassword1" placeholder="Password" ngModel>
+                    <div *ngIf="cpassword.touched && cpassword.invalid" class="alert alert-danger">
+                        Passwords don't match
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary sign-btn mx-4" [disabled]="signup.invalid">Register
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </button> - OR -
+                <button class="btn btn-social-icon btn-google btn-primary sign-btn mx-4" (click)="signInWithGoogle()">SignUp with Google</button>
+            </form>
+            <div class=" mb-3 form-check old-acc">
+                Already have an account? <a [routerLink]="['/login']" id="forget">Click here</a>
+            </div>
+        </div>
+    </div>
+</body>
